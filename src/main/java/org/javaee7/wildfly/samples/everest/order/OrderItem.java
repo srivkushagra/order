@@ -8,7 +8,11 @@ import javax.persistence.Embeddable;
  */
 @Embeddable
 public class OrderItem implements Serializable {
-    int itemId;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5096952074542144368L;
+	int itemId;
     int itemCount;
 
     public OrderItem() {

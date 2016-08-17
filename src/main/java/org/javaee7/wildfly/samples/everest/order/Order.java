@@ -18,7 +18,12 @@ import javax.persistence.Table;
 @Table(name = "CART_ORDER")
 public class Order implements Serializable {
 
-    @Id
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1328869648553936091L;
+
+	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     @Column
     int orderId;
